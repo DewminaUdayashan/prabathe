@@ -50,8 +50,10 @@ class Home extends StatelessWidget {
 
 class DetailsPage extends StatelessWidget {
   final String name;
+  final String? title;
 
-  const DetailsPage({Key? key, required this.name}) : super(key: key);
+  const DetailsPage({Key? key, required this.name, this.title})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
